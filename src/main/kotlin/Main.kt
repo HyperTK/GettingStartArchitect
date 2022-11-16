@@ -1,10 +1,17 @@
+import rpg.AttackPower
+import rpg.Weapon
 import java.util.*
 
 fun main(args: Array<String>) {
-    val yen = Currency.getInstance(Locale.JAPAN)
-    println(yen)
+    val attackPower = AttackPower(20)
+    val weaponA = Weapon(attackPower)
+    val weaponB = Weapon(attackPower)
 
-    val money = Money(100, yen)
-    val addedMoney = money.add(Money(400, yen))
-    addedMoney.currentMoneyInfo()
+    println(weaponA.attackPower.value)
+    println(weaponB.attackPower.value)
+
+    weaponA.attackPower.value = 25
+
+    println(weaponA.attackPower.value)
+    println(weaponB.attackPower.value)
 }

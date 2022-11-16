@@ -17,4 +17,5 @@ class Money(private val amount: Int, private val currency: Currency ) {
         println("money:$amount, currency:$currency")
     }
 
+
 }
