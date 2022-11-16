@@ -6,6 +6,5 @@ fun main(args: Array<String>) {
 
     val money = Money(100, yen)
     val addedMoney = money.add(Money(400, yen))
-    println(addedMoney)
-
+    addedMoney.currentMoneyInfo()
 }

@@ -14,7 +14,7 @@ class Money(private val amount: Int, private val currency: Currency ) {
     }
 
     fun currentMoneyInfo() {
-        println("money")
+        println("money:$amount, currency:$currency")
     }
 
 }
