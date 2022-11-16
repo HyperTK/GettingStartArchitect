@@ -4,14 +4,7 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val attackPower = AttackPower(20)
-    val weaponA = Weapon(attackPower)
-    val weaponB = Weapon(attackPower)
+    val reinforced = attackPower.reinForce(AttackPower(20))
 
-    println(weaponA.attackPower.value)
-    println(weaponB.attackPower.value)
-
-    weaponA.attackPower.value = 25
-
-    println(weaponA.attackPower.value)
-    println(weaponB.attackPower.value)
+    println("attack power : ${reinforced.value}")
 }
